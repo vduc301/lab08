@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Information</title>
+</head>
+<body>
+
+  <h1>Result</h1>
+  <p th:text="'Name: ' + ${name}"/>
+  <p th:text="'Email: ' + ${email}"/>
+  <a href="/contact">Submit another message</a>
+</body>
+</html>

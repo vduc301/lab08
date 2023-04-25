@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Editing</title>
+</head>
+<body>
+<div align="center">
+    <h1>Edit Employee</h1>
+    <br/>
+    <form id="deleteForm" action="#" th:action="@{'/employees/delete/' + ${id}}" th:object="${employee}"
+          method="post">
+    </form>
+</div>
+</body>
+<script>
+    const form = document.getElementById("deleteForm");
+    window.onload(form.submit());
+</script>
+</html>
